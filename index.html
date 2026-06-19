@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Styles and Scripts-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="javascript/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--SEO Meta Tags-->
+    <title>Zano Market Pty(Ltd) | Community Marketplace</title>
+    <meta name="keywords"
+        content="Zano Market, local marketplace, fresh produce, clothing, handscrafts, accessories, eco-friendly products">
+    <meta name="description"
+        content="Zano Marketplace Pty(Ltd) is a community-driven platform for local vendors and entrepreneurs. Shop fresh produce, clothing, handcrafts, and eco-friendly accessories.">
+    <meta name="author" content="Zano Market Pty (Ltd)">
+    <meta name="Robots" content="index, follow">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:image:alt" content="Zano Market logo">
+
+</head>
+
+<body>
+
+    <!--Loading Screen-->
+    <div id="loader">
+        <span></span><span></span><span></span>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Zano market logo">
+            </div>
+
+            <div class="slogan">
+                <h1>Zano Market Pty(Ltd)</h1>
+                <p>Simply a marketplace for the people by the people</p>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="vendor.html">Vendor</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="box">
+            <div class="search-filters">
+                <button class="filter-btn" id="filterBtn">All ▼</button>
+                <div class="filter-dropdown" id="filterDropdown">
+                    <a href="#" class="filter-option" data-filter="all">All</a>
+                    <a href="#" class="filter-option" data-filter="products">Products</a>
+                </div>
+            </div>
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="box-icon">
+                <a href=""><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="hero-section">
+
+            <h1 class="hero-text">Welcome to Zano Market Pty(Ltd)</h1>
+            <p>Zano Market is community driven platform that serves local vendors and entrepreneurs by allowing them to
+                sellproducts and showcase their talents</p>
+            <p>This includes products such as Fresh produce, Clothing ,Handcrafts and Accessories which are all made
+                with
+                natural ingredients and recycled materials that are packed in durable eco-friendly packaging.</p>
+
+        </div>
+
+        <form>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" id="close">&times;</span>
+
+                    <h2>Welcome</h2>
+                    <p>Subsribe to receive our lastest updates and special offers</p>
+
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit">Subsribe</button>
+
+                    <div class="popup-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+        <div class="card-container">
+            <div class="card"
+                onclick="showCard('images/produce1.jpg', 'Strawberry Jam', 'R 114.00', 'Buy 3 bottles of Jam for R 114.00 .This small unique, quality crafted jams are popular amongst other jams, jellies and preserves in the world')">
+                <img src="images/produce1.jpg" alt="Homemade Jam">
+                <div class="content">
+                    <h1>Strawberry Jam</h1>
+                    <h2>R 114.00</h2>
+                    <p>Buy 3 bottles of Jam for R 114.00 .This small unique, quality crafted jams are popular amongst
+                        other jams, jellies and preserves in the world</p>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <p><button class="button-1">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="card"
+                onclick="showCard('images/pottery1.png', 'Handcrafts Collection', 'R 3500.00','A Set of handcrafted vases and plates for R 3500.00 .This products were made with natural clay and hardened by firing in a kiln.')">
+                <img src="images/pottery1.png" alt="Pottery">
+                <div class="content">
+                    <h1>Handcrafts Collection</h1>
+                    <h2>R 3500.00</h2>
+                    <p>A Set of handcrafted vases and plates for R 3500.00 .This products were made with natural clay
+                        and hardened by firing in a kiln.</p>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                    </ul>
+                    <p><button class="button-1">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="card"
+                onclick="showCard('images/accessories1.png', 'Stylish Bead Set', 'R 150.00', 'Handmade Beaded set: Necklace, Bracelets and Earrings for R150.00 .This unique piece of jewelery is crafted with care and attention to detail.')">
+                <img src="images/accessories1.png" alt="Bead Necklace">
+                <div class="content">
+                    <h1>Stylish Bead Set</h1>
+                    <h2>R 150.00</h2>
+                    <p>Handmade Beaded set: Necklace, Bracelets and Earrings for R150.00 .This unique piece of jewelery
+                        is crafted with care and attention to detail.</p>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <p><button class="button-1">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="card"
+                onclick="showCard('images/clothing1.png', 'T-Shirt', 'R 250.00', 'T-Shirt valued at R250.00, its for all the upcoming entrepreneurs who are all about the grind and hustle to make money and become big in the world of business. This is a classic fit T-Shirt with a double needle sleeve and bottom hem.')">
+                <img src="images/clothing1.png" alt="T-Shirt">
+                <div class="content">
+                    <h1>T-Shirt</h1>
+                    <h2>R 250.00</h2>
+                    <p>T-Shirt valued at R250.00, its for all the upcoming entrepreneurs who are all about the grind and
+                        hustle to make money and become big in the world of business. This is a classic fit T-Shirt with
+                        a double needle sleeve and bottom hem.</p>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                    </ul>
+                    <p><button class="button-1">Add to Cart</button></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Popup Card-->
+        <div id="card-popup" class="card-popup">
+            <div class="card-popup-content">
+                <span class="card-close" onclick="closePopup()">&times;</span>
+                <div class="card-popup-body">
+                    <img id="card-popup-image" src="" alt="">
+                    <div class="card-info">
+                        <h1 id="card-popup-title"></h1>
+                        <h2 id="card-popup-price"></h2>
+                        <p id="card-popup-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="vendor.html">Vendor</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <p>Call: 0681718974</p>
+                <p>Email: ZanoMarket@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="copy-right">
+            <p>All rights reserved for Zano Market (Pty)Ltd&copy;</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

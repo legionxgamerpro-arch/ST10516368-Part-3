@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Styles and Scripts-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="javascript/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--SEO Meta Tags-->
+    <title>Become a Vendor | Zano Market Pty(Ltd)</title>
+    <meta name="keywords" content="Zano Market vendor, sell products, local entrepreneures, online store, marketplace registration, vendor application">
+    <meta name="description" content="Join Zano Market Pty(Ltd) as a vendor. Register your store, showcase your products, and reach a community-driven audience with ease.">
+    <meta name="author" content="Zano Market Pty (Ltd)">
+    <meta name="Robots" content="index, follow">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:image:alt" content="Zano Market logo">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Zano market logo">
+            </div>
+
+            <div class="slogan">
+                <h1>Zano Market Pty(Ltd)</h1>
+                <p>Simply a marketplace for the people by the people</p>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="vendor.html" class="active">Vendor</a></li>
+            </ul>
+        </nav>
+
+        <div class="box">
+            <div class="search-filters">
+                <button class="filter-btn" id="filterBtn">All ▼</button>
+                <div class="filter-dropdown" id="filterDropdown">
+                    <a href="#" class="filter-option" data-filter="all">All</a>
+                    <a href="#" class="filter-option" data-filter="products">Products</a>
+                </div>
+            </div>
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="box-icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="hero-section">
+
+            <h2>Why Zano Market is for you!</h2>
+            <p>Become a vendor and start your online Store journey with us. Hassle free sign-up for all vendors who are
+                ready to reach more customers.</p>
+
+            <h2>Ease of Use</h2>
+            <p>Zano Market is a user friendly website allowing you effortless navigation,security and functionality.</p>
+
+            <h2>Personal Support</h2>
+            <p>Zano Market offers a 24/7 patient support team to assist you , step by step through your online journey
+                with us.<br>No problem is to big for us, reach out and we will resolve your issue. Contact us on
+                support@ZanoMarket.co.za .</p>
+
+            <h2>How to Apply</h2>
+            <p>Registration form is provided ,all you have to do is fill it out. After filling it out you will receive a
+                confirmation Email about your Application.</p>
+            <p>Your Application will be reviewed within 3 to 5 business days.</p>
+            <p>After Application is approved you will have access to your dashboard where you can create and manage your
+                store.</p>
+
+        </div>
+
+        <div class="register-container">
+            <div class="content">
+                <h1>Registration Form</h1>
+                <form id="Form" action="mailto:ZanoMarket@gmail.com">
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="Username">Username</label>
+                            <input class="input2" id="Username" type="text" name="Username"
+                                placeholder="Enter your username" required>
+                        </div>
+                        <div class="field">
+                            <label for="Name">Full name</label>
+                            <input class="input2" id="Name" type="text" name="Full Name"
+                                placeholder="Enter your name and surname" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="Email">Email address</label>
+                            <input class="input2" id="Email" type="email" name="EmailAdress"
+                                placeholder="Enter your email address" required>
+                        </div>
+                        <div class="field">
+                            <label for="Storename">Store name</label>
+                            <input class="input2" id="Storename" type="text" name="StoreName"
+                                placeholder="Enter your store name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="Phonenumber">Phone number</label>
+                            <input class="input2" id="Phonenumber" type="tel" name="Phone"
+                                placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="field">
+                            <label for="Password">Password</label>
+                            <input class="input2" id="Password" type="password" name="Password"
+                                placeholder="Enter your password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="field full-width">
+                            <label for="Confirmpassword">Confirm Password</label>
+                            <input class="input2" id="Confirmpassword" type="password" name="ConfirmPassword"
+                                placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="field full-width">
+                    <button class="submit" id="submitBtn" type="submit">
+                        <span id="btnText">Send</span>
+                        <span id="spinner" style="display: none; margin-left: 8px; border: 2px solid #f3f3f3; border-top: 2px solid #3498db; border-radius: 50%; width: 16px; height: 16px; animation: spin 1s linear infinite;"></span>
+                    </button>
+                        </div>
+
+                    <p id="message" style="display: none; margin-top: 10px; color: green; font-weight: bold;">Message has been sent ✓</p>
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="vendor.html" class="active">Vendor</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <p>Call: 0681718974</p>
+                <p>Email: ZanoMarket@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="copy-right">
+            <p>All rights reserved for Zano Market (Pty)Ltd&copy;</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

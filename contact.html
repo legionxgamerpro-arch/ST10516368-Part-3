@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Styles and Scripts-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="javascript/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--SEO Meta Tags-->
+    <title>Contact Zano Market Pty(Ltd)</title>
+    <meta name="keywords" content="Zano Market, contact, email, phone, customer support, store location, enquiry form">
+    <meta name="description"
+        content="Get in touch with Zano Market Pty(Ltd). Call us, email us, or visit our store. Use our enquiry form for product questions or support">
+    <meta name="author" content="Zano Market Pty (Ltd)">
+    <meta name="Robots" content="index, follow">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:image:alt" content="Zano Market logo">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Zano market logo">
+            </div>
+
+            <div class="slogan">
+                <h1>Zano Market Pty(Ltd)</h1>
+                <p>Simply a marketplace for the people by the people</p>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="vendor.html">Vendor</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="box">
+            <div class="search-filters">
+                <button class="filter-btn" id="filterBtn">All ▼</button>
+                <div class="filter-dropdown" id="filterDropdown">
+                    <a href="#" class="filter-option" data-filter="all">All</a>
+                    <a href="#" class="filter-option" data-filter="products">Products</a>
+                </div>
+            </div>
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="box-icon">
+                <a href=""><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="hero-section">
+
+            <h2>Contact Form and Location of Store</h2>
+            <p>Contact us for any issues or advice on products. Be sure to visit us and explore our physical store
+                for more products and deals </p>
+
+        </div>
+
+        <div class="form-container">
+
+            <div class="left">
+                <h1>Contact Us</h1>
+                <p class="text">Call:0681718974</p>
+                <p class="text">Email:ZanoMarket@gmail.com</p>
+
+                <form id="Form" action="mailto:ZanoMarket@gmail.com">
+
+                    <label for="Name">Full name</label><br>
+                    <input class="input" type="text" name="Full Name" placeholder="Enter your name and surname"
+                        required><br>
+
+                    <label for="Email">Email address</label><br>
+                    <input class="input" type="email" name="EmailAdress" placeholder="Enter your email address"
+                        required><br>
+
+                    <label for="msg">Message</label><br>
+                    <textarea class="textarea" name="msg" rows="5" cols="50"
+                        placeholder="Write something"></textarea><br>
+
+                    <button class="submit" id="submitBtn" type="submit">
+                        <span id="btnText">Send</span>
+                        <span id="spinner"
+                            style="display: none; margin-left: 8px; border: 2px solid #f3f3f3; border-top: 2px solid #3498db; border-radius: 50%; width: 16px; height: 16px; animation: spin 1s linear infinite;"></span>
+                    </button>
+
+                    <p id="message" style="display: none; margin-top: 10px; color: green; font-weight: bold;">Message
+                        has been sent ✓</p>
+
+                </form>
+            </div>
+            
+            <div class="right">
+                <h1>Locate Us</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1730.1453506212233!2d31.025473773479465!3d-29.85588911973575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a9c975b50fe3%3A0x7cad8d7b0a3dcf4e!2sThe%20Workshop%20Shopping%20Centre!5e0!3m2!1sen!2sza!4v1773057518289!5m2!1sen!2sza"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="vendor.html">Vendor</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <p>Call: 0681718974</p>
+                <p>Email: ZanoMarket@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="copy-right">
+            <p>All rights reserved for Zano Market (Pty)Ltd&copy;</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

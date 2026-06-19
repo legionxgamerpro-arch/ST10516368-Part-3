@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Styles and Scripts-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="javascript/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--SEO Meta Tags-->
+    <title>Products | Zano Market Pty(Ltd)</title>
+    <meta name="keywords" content="Zano Market products, fresh produce, clothing, handcrafts, accessories, eco-friendly marketplace">
+    <meta name="description" content="Browse Zano Market's diverse product range including fresh produce, clothing, handcrafts, pottery, and accessories. All items are locally sourced and eco-friendly">
+    <meta name="author" content="Zano Market Pty (Ltd)">
+    <meta name="Robots" content="index, follow">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:image:alt" content="Zano Market logo">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Zano market logo">
+            </div>
+
+            <div class="slogan">
+                <h1>Zano Market Pty(Ltd)</h1>
+                <p>Simply a marketplace for the people by the people</p>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="vendor.html">Vendor</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="box">
+            <div class="search-filters">
+                <button class="filter-btn" id="filterBtn">All ▼</button>
+                <div class="filter-dropdown" id="filterDropdown">
+                    <a href="#" class="filter-option" data-filter="all">All</a>
+                    <a href="#" class="filter-option" data-filter="products">Products</a>
+                </div>
+            </div>
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="box-icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="hero-section">
+
+            <h2>"Tired of High Prices? Shop our curated marketplace"</h2>
+            <p>We offer a highly diverse product range supplied to us by local vendors, entrepreneurs and
+                artisans.
+        </div>
+
+        </div>
+
+        <h1 class="title">Shop Fresh Produce</h1>
+
+        <div class="products-container">
+
+            <div class="products-card"
+            onclick="showProductsCard('images/produce2.webp', 'Fresh Pumpkin', 'R 65.00', 'Shop this fresh produce pumpkins which are suitable for decor, carving and for delicious recipes. The Pumpkins size , weight and shape vary' )">
+                <img src="images/produce2.webp" alt="Pumpkin" style="width: 100%;">
+                <h2>Fresh Pumpkin</h2>
+                <p>Shop this fresh produce pumpkins which are suitable for decor, carving and for delicious recipes. The
+                    Pumpkins size , weight and shape vary</p>
+                <p class="price">R 65.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card" 
+            onclick="showProductsCard('images/produce3.jpg', 'Bell Peppers', 'R 35.00', 'A Pack of 3 bell peppers for R 35.00. Consists of vitamin c and other antioxidants. They are naturally low on calories')">
+                <img src="images/produce3.jpg" alt="Fresh Pepper" style="width: 100%;">
+                <h2>Bell Peppers</h2>
+                <P>A Pack of 3 bell peppers for R 35.00. Consists of vitamin c and other antioxidants. They are
+                    naturally low on calories</p>
+                <p class="price">R 35.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card"
+            onclick="showProductsCard('images/produce4.jpg', 'Nectarine', 'R 40.00', 'Freshly Grown Yellow Nectarines. A Pack of six nectarines for R 40.00. Our freshly grown juicy nectarines are delicious and suitable for recipes like fruit salads.')">
+                <img src="images/produce4.jpg" alt="Nectarine" style="width: 100%;">
+                <h2>Nectarine</h2>
+                <p>Freshly Grown Yellow Nectarines. A Pack of six nectarines for R 40.00. Our freshly grown juicy
+                    nectarines are delicious and suitable for recipes like fruit salads.
+                <p class="price">R 40.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card"
+            onclick="showProductsCard('images/produce5.jpg', 'Strawberry Jam', 'R 45.00', 'This small unique, quality crafted jams are popular amongst other jams, jellies and preserves in the world. They are made using juicy strawberries fot sweet and tarty flavour.')">
+                <img src="images/produce5.jpg" alt="Homemade Jam" style="width: 100%;">
+                <h2>Strawberry Jam</h2>
+                <p>This small unique, quality crafted jams are popular amongst other jams, jellies and preserves in the
+                    world. They are made using juicy strawberries fot sweet and tarty flavour.</p>
+                <p class="price">R 45.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star" checked></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <h1 class="title">Pottery and Ceramics</h1>
+
+        <div class="products-container">
+
+            <div class="products-card"
+            onclick="showProductsCard('images/pottery2.png', 'Decorative african style mask', 'R 1500.00', 'The mask is hand-carved from wood. Consits of intricate geometric carvings and a stylized human face feature. Its used for home decor and collectors')">
+                <img src="images/pottery2.png" alt="Ceremonial Mask" style="width: 100%;">
+                <h2>Decorative african style mask</h2>
+                <p>The mask is hand-carved from wood. Consits of intricate geometric carvings and a stylized human
+                    face
+                    feature. Its used for home decor and collectors</p>
+                <p class="price">R 1500.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card"
+            onclick="showProductsCard('images/pottery3.png', 'Matte Black Glazed Egg Cup-Set of Two', 'R 399.00','Transform your morning routine with our unique ,timeless and elegent two totem egg cup set in matte black')">
+                <img src="images/pottery3.png" alt="Ceramic Vases" style="width: 100%;">
+                <h2>Matte Black Glazed Egg Cup-Set of Two</h2>
+                <p>Transform your morning routine with our unique ,timeless and elegent two totem egg cup set in matte
+                    black
+                </p>
+                <p class="price">R 399.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card"
+            onclick="showProductsCard('images/pottery4.webp', 'Carve bowl collection', 'R 335.00', 'The gloss glaced carve bowl comes in three different hues which are Ivory, Taupe and Cocoa.')">
+                <img src="images/pottery4.webp" alt="Ceramic Bowls" style="width: 100%;">
+                <h2>Carve bowl collection</h2>
+                <p>The gloss glaced carve bowl comes in three different hues which are Ivory, Taupe and Cocoa.</p>
+                <p class="price">R 335.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star" checked></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card"
+            onclick="showProductsCard('images/pottery5.png', 'Penguin Jug', 'R 270.00', 'The jug comes in different sizes small, medium and large with a chic glaze choice Khaki and matt black. It has a glazed interior and exterior.')">
+                <img src="images/pottery5.png" alt="Ceramic Pitchers" style="width: 100%;">
+                <h2>Penguin Jug</h2>
+                <p>The jug comes in different sizes small, medium and large with a chic glaze choice -<br>Khaki
+                    and matt black</p>
+                <p>It has a glazed interior and exterior</p>
+                <p class="price">R 270.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <h1 class="title">Clothing</h1>
+
+        <div class="products-container">
+
+            <div class="products-card"
+            onclick="showProductsCard('images/clothing2.webp', 'Phola Kuzolunga T-Shirt', 'R 150.00', 'Stay inspired with our 100 % cotton, durable and elegent design with an inspiring message-Phola Kuzolunga, meaning be calm everything will be well soon.')">
+                <img src="images/clothing2.webp" alt="T-Shirt" style="width: 100%;">
+                <h2>Phola Kuzolunga T-Shirt</h2>
+                <p>Stay inspired with our 100 % cotton, durable and elegent design with an inspiring
+                    message-Phola Kuzolunga, meaning be calm everything will be well soon.</p>
+                <p class="price">R 150.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star" checked></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card"
+            onclick="showProductsCard('images/clothing3.webp', 'Unity Sweater', 'R 380.00', 'Shop our comfortable black and cream unity sweater, Crafted from premium cotton')">
+                <img src="images/clothing3.webp" alt="Sweater" style="width: 100%;">
+                <h2>Unity Sweater</h2>
+                <p>Shop our comfortable black and cream unity sweater, Crafted from premium cotton</p>
+                <p class="price">R 380.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card"
+            onclick="showProductsCard('images/clothing4.jpg', 'Womens Pleated Skirt Dresses', 'R 400.00', 'This is a vintage inspired floral dress, Its made from soft lightweight fabric ,Suitable for autumn,  winter,spring and events like weddings and beach dates')">
+                <img src="images/clothing4.jpg" alt="Dress" style="width: 100%;">
+                <h2>Women's Pleated Skirt Dresses</h2>
+                <p>This is a vintage inspired floral dress, Its made from soft lightweight fabric ,Suitable for autumn,
+                    winter,spring and events like weddings and beach dates</p>
+                <p class="price">R 400.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card"
+            onclick="showProductsCard('images/clothing5.jpg', 'African design shirt print', 'R 300.00', 'This is a slim fit ,Polyester and satin Shirt from Mbali Ndlovu saturday collection')">
+                <img src="images/clothing5.jpg" alt="Traditional Shirt" style="width: 100%;">
+                <h2>African design shirt print</h2>
+                <p>This is a slim fit ,Polyester and satin Shirt<br> from Mbali Ndlovu's saturday collection</p>
+                <p class="price">R 300.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+        </div>
+
+        <h1 class="title">Accessories</h1>
+
+        <div class="products-container">
+
+            <div class="products-card"
+            onclick="showProductsCard('images/accessories2.png', 'Bead Bracelet', 'R 30.00', 'Stylish bead bracelet set For Women, Handmade design with Faux Crystal Beaded Chain With Butterfly Pendant. Suitable For Daily Wear Or Gifting')">
+                <img src="images/accessories2.png" alt="Bead Bracelets" style="width: 100%;">
+                <h2>Bead Bracelet</h2>
+                <p>Stylish bead bracelet set For Women, Handmade design with Faux Crystal Beaded Chain With Butterfly
+                    Pendant. Suitable For Daily Wear Or Gifting</P>
+                <p class="price">R 30.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card"
+            onclick="showProductsCard('images/accessories3.png', 'Pink Patterned Phone Case', 'R 45.00', 'Fashionable Pink Patterned Anti-Fingerprint Red Corundum,Anti-Drop Phone Case. Compatible With Apple, OPPO, Realme and Samsung')">
+                <img src="images/accessories3.png" alt="Phone Case" style="width: 100%;">
+                <h2>Pink Patterned Phone Case</h2>
+                <p>Fashionable Pink Patterned Anti-Fingerprint Red Corundum,Anti-Drop Phone Case. Compatible With Apple,
+                    OPPO, Realme and Samsung</p>
+                <p class="price">R 45.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card"
+            onclick="showProductsCard('images/accessories4.png', 'Baseball Cap', 'R 100.00', 'Mens adjustable Gothic Letter Embroidery Baseball Cap for outdoor Sun Protection,Casual wear Travel, Beach, Party and Summer Holiday.')">
+                <img src="images/accessories4.png" alt="Cap" style="width: 100%;">
+                <h2>Baseball Cap</h2>
+                <p>Mens adjustable Gothic Letter Embroidery Baseball Cap for outdoor Sun Protection,Casual wear Travel,
+                    Beach, Party and Summer Holiday.</p>
+                <p class="price">R 100.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+
+            <div class="products-card"
+            onclick="showProductsCard('images/accessories5.png', 'Sunglasses', 'R 60.00', 'Mens multicolor sunglasses for holiday, streetwear or travel')">
+                <img src="images/accessories5.png" alt="Sunglasses" style="width: 100%;">
+                <h2>Sunglasses</h2>
+                <p>Mens multicolor sunglasses for holiday, streetwear or travel</p>
+                <p class="price">R 60.00</p>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+
+                <p><button class="button-1">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <!--Popup Products Card-->
+        <div id="products-popup" class="products-popup">
+            <div class="products-popup-content">
+                <span class="products-popup-close" onclick="closeProductPopup()">&times;</span>
+                <div class="products-popup-body">
+                    <img id="products-popup-image" src="" alt="">
+                    <div class="products-info">
+                        <h1 id="products-popup-title"></h1>
+                        <h2 id="products-popup-price"></h2>
+                        <p id="products-popup-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="vendor.html">Vendor</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <p>Call: 0681718974</p>
+                <p>Email: ZanoMarket@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="copy-right">
+            <p>All rights reserved for Zano Market (Pty)Ltd&copy;</p>
+        </div>
+
+    </footer>
+    
+</body>
+
+</html>
